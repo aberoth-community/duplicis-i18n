@@ -1,0 +1,23 @@
+{
+  "name": "@duplicis/i18n",
+  "description": "Duplicis i18n & translations",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./sync": "./src/i18n/i18n-util.sync.ts",
+    "./async": "./src/i18n/i18n-util.async.ts"
+  },
+  "scripts": {
+    "build": "typesafe-i18n --no-watch",
+    "format": "pnpm --workspace-root run format",
+    "lint": "pnpm --workspace-root run lint",
+    "lint:tsc": "tsc",
+    "typesafe-i18n": "typesafe-i18n"
+  },
+  "devDependencies": {
+    "@duplicis/config": "workspace:*",
+    "typesafe-i18n": "^5.27.1"
+  }
+}
