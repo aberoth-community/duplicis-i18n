@@ -7,7 +7,6 @@
 
     /* paths */
     "rootDir": "./",
-    "baseUrl": "./",
     "noEmit": true,
 
     /* typechecking */
