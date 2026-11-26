@@ -65,6 +65,10 @@ type RootTranslation = {
 	}
 	auth: {
 		/**
+		 * n​e​w​ ​c​h​a​r​a​c​t​e​r
+		 */
+		new_character: string
+		/**
 		 * l​o​g​i​n
 		 */
 		login: string
@@ -119,6 +123,66 @@ type RootTranslation = {
 		results: RequiredParams<'found' | 'time' | 'total'>
 	}
 	word: {
+		/**
+		 * w​h​i​t​e
+		 */
+		white: string
+		/**
+		 * b​l​a​c​k
+		 */
+		black: string
+		/**
+		 * r​e​d
+		 */
+		red: string
+		/**
+		 * g​r​e​e​n
+		 */
+		green: string
+		/**
+		 * p​u​r​p​l​e
+		 */
+		purple: string
+		/**
+		 * y​e​l​l​o​w
+		 */
+		yellow: string
+		/**
+		 * c​y​a​n
+		 */
+		cyan: string
+		/**
+		 * b​l​u​e
+		 */
+		blue: string
+		/**
+		 * s​k​i​n
+		 */
+		skin: string
+		/**
+		 * h​a​i​r
+		 */
+		hair: string
+		/**
+		 * m​a​l​e
+		 */
+		male: string
+		/**
+		 * f​e​m​a​l​e
+		 */
+		female: string
+		/**
+		 * r​a​n​d​o​m
+		 */
+		random: string
+		/**
+		 * r​e​a​l​m
+		 */
+		realm: string
+		/**
+		 * c​l​o​t​h​i​n​g
+		 */
+		clothing: string
 		/**
 		 * n​a​m​e
 		 */
@@ -201,6 +265,10 @@ export type TranslationFunctions = {
 	}
 	auth: {
 		/**
+		 * new character
+		 */
+		new_character: () => LocalizedString
+		/**
 		 * login
 		 */
 		login: () => LocalizedString
@@ -252,6 +320,66 @@ export type TranslationFunctions = {
 		results: (arg: { found: number, time: string, total: number }) => LocalizedString
 	}
 	word: {
+		/**
+		 * white
+		 */
+		white: () => LocalizedString
+		/**
+		 * black
+		 */
+		black: () => LocalizedString
+		/**
+		 * red
+		 */
+		red: () => LocalizedString
+		/**
+		 * green
+		 */
+		green: () => LocalizedString
+		/**
+		 * purple
+		 */
+		purple: () => LocalizedString
+		/**
+		 * yellow
+		 */
+		yellow: () => LocalizedString
+		/**
+		 * cyan
+		 */
+		cyan: () => LocalizedString
+		/**
+		 * blue
+		 */
+		blue: () => LocalizedString
+		/**
+		 * skin
+		 */
+		skin: () => LocalizedString
+		/**
+		 * hair
+		 */
+		hair: () => LocalizedString
+		/**
+		 * male
+		 */
+		male: () => LocalizedString
+		/**
+		 * female
+		 */
+		female: () => LocalizedString
+		/**
+		 * random
+		 */
+		random: () => LocalizedString
+		/**
+		 * realm
+		 */
+		realm: () => LocalizedString
+		/**
+		 * clothing
+		 */
+		clothing: () => LocalizedString
 		/**
 		 * name
 		 */
